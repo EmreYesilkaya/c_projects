@@ -1,2 +1,3 @@
 # company_selling_report_project
-Ybs projesi için gerekli olan bütün algoritmalar içinde bulunuyo sadece derlemeniz lazım özet hali olarak düşünebilirsiniz
+Bazı projelerimin özet dosyaları
+bütün algoritmaları tek bir int main() e koydum lütfen hepsini ayrı ayrı fonksiyon yapıp case haline getirin. Yoksa direk çalışmaz
