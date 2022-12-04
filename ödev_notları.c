@@ -28,8 +28,10 @@ int main(){
 		c[i] = 10000 + rand() % 300000;
 	}
 	
+	
 	//en büyük karı bulup yazdıran fonksiyon böyle yapılıyor  ençok satış ayda bunu kullan
-	 	for(i=0; i<12 ; i++){
+	// +1 yazılmasının sebebini bulamadım bulamadığı için öyle yaptım hep eksik buluyodu direk alırsanız anlaşılır.
+	for(i=0; i<12 ; i++){
 	 	if(a[13]<a[i])
 		a[13]=a[i];
 			if(b[13]<b[i])
