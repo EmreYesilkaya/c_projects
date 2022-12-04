@@ -86,6 +86,7 @@ printf("hangi ayı istiyorsanız giriniz");
 scanf("%d",&n);
 	n=n-1;
 toplam = a[n]+b[n]+c[n];
+	n = n+1;
 printf("işletmeler %d ayda toplam %d satış yapmıştır",n,toplam);
 
 
