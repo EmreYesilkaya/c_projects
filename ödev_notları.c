@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
-//arkadaşlar selam normalde ödevi kendim de yapmıycaktım ama böyle bir şey hazırladım özet gibi olsun diye altakileri yaparsanız herkes farklı yapar
-//ve 10 alırsınız herkese direk atsaydım kimse tam alamazdı çünküm soruların tke bir çözümü yok
-//sorular için kullanmanız gereken algoritmalar aşağıda sizin yapmanız gereken şey bunları soruda yazan fonksiyon hallerine getirmek 
-//örneği kitapta 161. sayfada var 
-//birde menü haline getirmeniz yani case yapmanız lazım bu da sayfa 86 da var 
-//int lerin isimlerini hem soruda hem de int de değiştirmeyi unutmayın
-//mavi yazıları da silin 
-//git hesabından bakmaya hoca izin verdi 
+//arkadaÅŸlar selam normalde Ã¶devi kendim de yapmÄ±ycaktÄ±m ama bÃ¶yle bir ÅŸey hazÄ±rladÄ±m Ã¶zet gibi olsun diye altakileri yaparsanÄ±z herkes farklÄ± yapar
+//ve 10 alÄ±rsÄ±nÄ±z herkese direk atsaydÄ±m kimse tam alamazdÄ± Ã§Ã¼nkÃ¼m sorularÄ±n tke bir Ã§Ã¶zÃ¼mÃ¼ yok
+//sorular iÃ§in kullanmanÄ±z gereken algoritmalar aÅŸaÄŸÄ±da sizin yapmanÄ±z gereken ÅŸey bunlarÄ± soruda yazan fonksiyon hallerine getirmek 
+//Ã¶rneÄŸi kitapta 161. sayfada var 
+//birde menÃ¼ haline getirmeniz yani case yapmanÄ±z lazÄ±m bu da sayfa 86 da var 
+//int lerin isimlerini hem soruda hem de int de deÄŸiÅŸtirmeyi unutmayÄ±n
+//mavi yazÄ±larÄ± da silin 
+//git hesabÄ±ndan bakmaya hoca izin verdi 
 
 
 
@@ -22,24 +22,32 @@ int main(){
 	
 	for(i=0;i<12;i++){
 	
-		//şirketler için 12 tane kazanç hesaplayan fonksiyon 1. soruda kullanılcak sayıt doldurda kullan!!
+		//ÅŸirketler iÃ§in 12 tane kazanÃ§ hesaplayan fonksiyon 1. soruda kullanÄ±lcak sayÄ±t doldurda kullan!!
 		a[i] = 10000 + rand() % 300000;
 		b[i] = 10000 + rand() % 300000;
 		c[i] = 10000 + rand() % 300000;
 	}
 	
-	//en büyük karı bulup yazdıran fonksiyon böyle yapılıyor  ençok satış ayda bunu kullan
-	for(i=0; i<12 ; ++i){
-		if(a[13]<a[i])
+	//en bÃ¼yÃ¼k karÄ± bulup yazdÄ±ran fonksiyon bÃ¶yle yapÄ±lÄ±yor  enÃ§ok satÄ±ÅŸ ayda bunu kullan
+		   	for(i=0; i<12 ; ++i){
+	 	if(a[13]<a[i])
 		a[13]=a[i];
 			if(b[13]<b[i])
 		b[13]=b[i];
 			if(c[13]<c[i])
 		c[13]=c[i];
+		   	}
+		       for(i=0; i<12; i++){
+		           if(a[i]==a[13])
+		           yer1 = i;
+		           if(b[i]==b[13])
+		           yer2 = i;
+		           if(c[i]==c[13])
+		           yer3 = i;
 			
 }
 
-en çok satış yapan fonsktionu bulan algoritma hocaya vermeden önce intlerin isimlerini değeiştir
+en Ã§ok satÄ±ÅŸ yapan fonsktionu bulan algoritma hocaya vermeden Ã¶nce intlerin isimlerini deÄŸeiÅŸtir
 for(i=0;i<12;i++){
 	t1 = t1+a[i];
 	t2 = t2+b[i];
@@ -51,24 +59,24 @@ printf("%d",max);
 
 if(t1>t2 && t1>t3){
 enb=t1;
-printf("en çok satış yapan a şirketdir %d satış yapmıştır",t1);
+printf("en Ã§ok satÄ±ÅŸ yapan a ÅŸirketdir %d satÄ±ÅŸ yapmÄ±ÅŸtÄ±r",t1);
 }
 else if(t2>t3 && t2>t1){
 enb = t2;
-printf("en çok satış yapan b şirketdir %d satış yapmıştır",t2);
+printf("en Ã§ok satÄ±ÅŸ yapan b ÅŸirketdir %d satÄ±ÅŸ yapmÄ±ÅŸtÄ±r",t2);
 }
 if(t3>t1 && t3>t1){
 
 enb = t3;
-printf("en çok satış yapan c şirketdir %d satış yapmıştır",t3);
+printf("en Ã§ok satÄ±ÅŸ yapan c ÅŸirketdir %d satÄ±ÅŸ yapmÄ±ÅŸtÄ±r",t3);
 }
-son anda gördüm çıktı kısmında toplam satışı da printfle gösterin 
+son anda gÃ¶rdÃ¼m Ã§Ä±ktÄ± kÄ±smÄ±nda toplam satÄ±ÅŸÄ± da printfle gÃ¶sterin 
 
 altaki algoritma da 4. algoritma sorudaki 
-printf("hangi ayı istiyorsanız giriniz");
+printf("hangi ayÄ± istiyorsanÄ±z giriniz");
 scanf("%d",&n);
 toplam = a[n]+b[n]+c[n];
-printf("işletmeler %d ayda toplam %d satış yapmıştır",n,toplam);
+printf("iÅŸletmeler %d ayda toplam %d satÄ±ÅŸ yapmÄ±ÅŸtÄ±r",n,toplam);
 
 
 
