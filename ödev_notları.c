@@ -29,7 +29,7 @@ int main(){
 	}
 	
 	//en büyük karı bulup yazdıran fonksiyon böyle yapılıyor  ençok satış ayda bunu kullan
-		   	for(i=0; i<12 ; ++i){
+	 	for(i=0; i<12 ; i++){
 	 	if(a[13]<a[i])
 		a[13]=a[i];
 			if(b[13]<b[i])
@@ -38,13 +38,20 @@ int main(){
 		c[13]=c[i];
 		   	}
 		       for(i=0; i<12; i++){
-		           if(a[i]==a[13])
+		           if(a[i]==a[13]){
 		           yer1 = i;
-		           if(b[i]==b[13])
+		              yer1=yer1+1;
+		           }
+		    
+		           if(b[i]==b[13]){
 		           yer2 = i;
-		           if(c[i]==c[13])
+		            yer2=yer2+1;
+		           }
+		        
+		           if(c[i]==c[13]){
 		           yer3 = i;
-			
+		           yer3=yer3+1;
+		           }
 }
 
 en çok satış yapan fonsktionu bulan algoritma hocaya vermeden önce intlerin isimlerini değeiştir
