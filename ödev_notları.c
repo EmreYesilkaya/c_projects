@@ -74,7 +74,7 @@ else if(t2>t3 && t2>t1){
 enb = t2;
 printf("en çok satış yapan b şirketdir %d satış yapmıştır",t2);
 }
-if(t3>t1 && t3>t1){
+if(t3>t1 && t3>t2){
 
 enb = t3;
 printf("en çok satış yapan c şirketdir %d satış yapmıştır",t3);
