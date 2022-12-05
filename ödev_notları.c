@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
-//arkadaşlar selam normalde ödevi kendim de yapmıycaktım ama böyle bir şey hazırladım özet gibi olsun diye altakileri yaparsanız herkes farklı yapar
-//ve 10 alırsınız herkese direk atsaydım kimse tam alamazdı çünküm soruların tke bir çözümü yok
-//sorular için kullanmanız gereken algoritmalar aşağıda sizin yapmanız gereken şey bunları soruda yazan fonksiyon hallerine getirmek 
-//örneği kitapta 161. sayfada var 
+//arkadaşlar selam normalde ödevi kendim de yapmıycaktım ama böyle bir şey hazırladım özet gibi olsun diye altakileri yaparsanız herkes farklı yapar ve çalışmışta 
+// olursunuz bu ders çalışılmadan geçilcek bi ders değil
+// aşağıda olan algoritmalar zaten googleda olan olgiritmalar sadece kendime kullanımı kolay olsun diye buraya yükledim
+//fonksiyon  örneği kitapta 161. sayfada var 
 //birde menü haline getirmeniz yani case yapmanız lazım bu da sayfa 86 da var 
-//int lerin isimlerini hem soruda hem de int de değiştirmeyi unutmayın
 //mavi yazıları da silin 
-//git hesabından bakmaya hoca izin verdi 
+
 
 
 
@@ -30,7 +29,6 @@ int main(){
 	
 	
 	//en büyük karı bulup yazdıran fonksiyon böyle yapılıyor  ençok satış ayda bunu kullan
-	// +1 yazılmasının sebebini bulamadım bulamadığı için öyle yaptım hep eksik buluyodu direk alırsanız anlaşılır.
 	for(i=0; i<12 ; i++){
 	 	if(a[13]<a[i])
 		a[13]=a[i];
@@ -56,7 +54,7 @@ int main(){
 		           }
 }
 
-en çok satış yapan fonsktionu bulan algoritma hocaya vermeden önce intlerin isimlerini değeiştir
+en çok satış yapan fonsktionu bulan algoritma 
 for(i=0;i<12;i++){
 	t1 = t1+a[i];
 	t2 = t2+b[i];
